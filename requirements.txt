@@ -1,7 +1,7 @@
 streamlit==1.44.1
 pandas
 plotly
-sentence-transformers
+sentence-transformers # Keep this, it might specify compatible versions
 protobuf
 faiss-cpu
 pymupdf
@@ -12,6 +12,10 @@ torchvision==0.18.1
 torchaudio==2.3.1
 # --- End PyTorch ---
 
+# --- Explicitly add transformers ---
+transformers==4.50.3 # Pin to the version seen in previous logs
+# --- End transformers ---
+
+
 # Add any other *pip-installable* dependencies
-# Example: If you needed openpyxl for Excel
 # openpyxl
