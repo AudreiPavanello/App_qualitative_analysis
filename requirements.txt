@@ -1,0 +1,16 @@
+# Base libraries from imports
+streamlit
+pandas
+transformers
+plotly
+
+# Likely dependencies for transformers (especially with Hugging Face Hub models)
+torch # Or tensorflow, but torch is more common with Hugging Face pipelines
+sentencepiece # Often needed for tokenizers used by transformers
+protobuf # Often needed by transformers/sentencepiece
+
+# Dependency for pandas Excel functionality (based on the 'io' import comment)
+openpyxl # Common engine for reading/writing .xlsx files
+
+# Note: numpy is a dependency of pandas and torch, pip will handle it.
+# Note: collections, re, string, io are built-in Python modules.
