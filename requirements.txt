@@ -1,16 +1,19 @@
-# Base libraries from imports
-streamlit
+streamlit==1.44.1 # Keep streamlit for now
 pandas
-transformers
 plotly
+sentence-transformers # This will pull in transformers
+protobuf
+faiss-cpu # Make sure this is included!
+pymupdf # Needed for preprocess_pdfs.py if using it
+pickle # Built-in, not needed here
 
-# Likely dependencies for transformers (especially with Hugging Face Hub models)
-torch # Or tensorflow, but torch is more common with Hugging Face pipelines
-sentencepiece # Often needed for tokenizers used by transformers
-protobuf # Often needed by transformers/sentencepiece
+# --- Pin PyTorch and related libraries ---
+# Use versions compatible with CUDA 12.1 (often works for 12.4 too, check PyTorch site if issues)
+# Or find specific 12.4 builds if available for 2.3.1
+torch==2.3.1+cu121
+torchvision==0.18.1+cu121
+torchaudio==2.3.1+cu121
+# --- End Pinned PyTorch ---
 
-# Dependency for pandas Excel functionality (based on the 'io' import comment)
-openpyxl # Common engine for reading/writing .xlsx files
-
-# Note: numpy is a dependency of pandas and torch, pip will handle it.
-# Note: collections, re, string, io are built-in Python modules.
+# Add any other direct dependencies your app *needs*
+# numpy # Often installed as a dependency
