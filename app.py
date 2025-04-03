@@ -4,7 +4,7 @@ from transformers import pipeline
 import plotly.express as px
 from collections import Counter
 import re
-import string
+import string # teste
 import io # Para exportar Excel
 
 # --- Configuração da Página e Cache ---
