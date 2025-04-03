@@ -18,4 +18,4 @@ transformers==4.50.3 # Pin to the version seen in previous logs
 
 
 # Add any other *pip-installable* dependencies
-# openpyxl
+openpyxl
