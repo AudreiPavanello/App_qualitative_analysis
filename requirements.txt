@@ -1,19 +1,17 @@
-streamlit==1.44.1 # Keep streamlit for now
+streamlit==1.44.1
 pandas
 plotly
-sentence-transformers # This will pull in transformers
+sentence-transformers
 protobuf
-faiss-cpu # Make sure this is included!
-pymupdf # Needed for preprocess_pdfs.py if using it
-pickle # Built-in, not needed here
+faiss-cpu
+pymupdf
 
-# --- Pin PyTorch and related libraries ---
-# Use versions compatible with CUDA 12.1 (often works for 12.4 too, check PyTorch site if issues)
-# Or find specific 12.4 builds if available for 2.3.1
-torch==2.3.1+cu121
-torchvision==0.18.1+cu121
-torchaudio==2.3.1+cu121
-# --- End Pinned PyTorch ---
+# --- Specify CPU PyTorch ---
+torch==2.3.1
+torchvision==0.18.1
+torchaudio==2.3.1
+# --- End PyTorch ---
 
-# Add any other direct dependencies your app *needs*
-# numpy # Often installed as a dependency
+# Add any other *pip-installable* dependencies
+# Example: If you needed openpyxl for Excel
+# openpyxl
