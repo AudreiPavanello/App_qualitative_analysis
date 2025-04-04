@@ -5,7 +5,9 @@ sentence-transformers # Keep this, it might specify compatible versions
 protobuf
 faiss-cpu
 pymupdf
-
+scikit-learn
+wordcloud
+matplotlib
 # --- Specify CPU PyTorch ---
 torch==2.3.1
 torchvision==0.18.1
@@ -19,3 +21,5 @@ transformers==4.50.3 # Pin to the version seen in previous logs
 
 # Add any other *pip-installable* dependencies
 openpyxl
+sentencepiece
+protobuf
