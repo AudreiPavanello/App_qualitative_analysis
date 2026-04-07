@@ -9,13 +9,13 @@ scikit-learn
 wordcloud
 matplotlib
 # --- Specify CPU PyTorch ---
-torch==2.7.0
+torch==2.8.0
 torchvision==0.18.1
 torchaudio==2.3.1
 # --- End PyTorch ---
 
 # --- Explicitly add transformers ---
-transformers==4.50.3 # Pin to the version seen in previous logs
+transformers==4.53.0 # Pin to the version seen in previous logs
 # --- End transformers ---
 
 
